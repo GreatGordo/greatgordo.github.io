@@ -7,7 +7,7 @@
 
 body {
   overflow-y: scroll;
-  height: 90vh;
+
   background: linear-gradient(DarkGrey, Black);
   background-attachment: fixed;
   position: relative;
@@ -232,7 +232,7 @@ ul {
 
 body {
   overflow-y: scroll;
-  height: 90vh;
+
   background: linear-gradient(DarkGrey, Black);
   background-attachment: fixed;
   position: relative;
