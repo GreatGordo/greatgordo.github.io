@@ -17,10 +17,10 @@ a {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.3);
   color: white;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-radius: 10px;
   box-shadow: 0px 2px 1px black;
-  margin: 0px 10px;
+  margin: 10px 10px;
 }
 
 a:focus {
@@ -36,11 +36,30 @@ nav {
   z-index: 1;
   display: flex;
   background-color: FireBrick;
-  padding: 10px 0px;
+  padding: 5px 0px;
   height: 60px;
   flex-wrap: wrap;
   justify-content: center;
 }
+
+@media only screen and (max-width: 790px) {
+  nav{
+    height: 120px; 
+  }
+  body{
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .pro-contents {
+    flex-direction: column;
+  }
+}
+
+
+
+
 
 header {
   flex-direction: row;
@@ -49,7 +68,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   color: white;
-  font-size: 2vh;
+  font-size: 25px;
   flex-wrap: wrap;
 }
 
@@ -68,6 +87,7 @@ img {
 #bio-card {
   display: block;
 }
+
 #con-card,
 #edu-card,
 #occ-card,
@@ -80,12 +100,12 @@ img {
 #edu-card,
 #pro-card,
 #occ-card {
-  margin: 20px 13vh 50px 13vh;
+  margin: 20px 10px 50px 10px;
   background-color: white;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 3px 3px DarkGrey;
-  font-size: 20px;
+  font-size: 2.5vh;
 }
 
 #con-card > p,
@@ -157,6 +177,7 @@ img {
   padding: 10px;
   color: white;
   width: 100%;
+  font-size: 25px;
 }
 
 .dropbtn::after {
@@ -175,6 +196,8 @@ img {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding: 20px;
+  font-size: 20px;
+
 }
 
 ul {
@@ -186,7 +209,8 @@ ul {
   height: 400px;
   width: 700px;
   border-radius: 10px;
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 #wb-container {
@@ -196,5 +220,5 @@ ul {
 
 #wb-img > img {
   height: 250%;
-  transform: translate(-3%,-20%);
+  transform: translate(0%,-20%);
 }
