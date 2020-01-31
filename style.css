@@ -23,7 +23,7 @@ a {
   margin: 0px 10px;
 }
 
-a:hover {
+a:focus {
   box-shadow: 0px 0px;
   transform: translate(2%, 2%);
 }
