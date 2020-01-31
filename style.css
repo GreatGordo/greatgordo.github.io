@@ -5,10 +5,13 @@
   box-sizing: border-box;
 }
 
+html{
+  background: linear-gradient(DarkGrey, Black);
+}
+
 body {
   overflow-y: scroll;
   height: 90vh;
-  background: linear-gradient(DarkGrey, Black);
   background-attachment: fixed;
   position: relative;
 }
