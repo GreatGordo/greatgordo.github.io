@@ -140,8 +140,8 @@ img {
 }
 
 .edu-img-div > img {
-  width: 400px;
-  transform: translate(-25%, -13%);
+  width: 500px;
+  transform: translate(-20%, -13%);
 }
 
 .pro-contents {
@@ -361,12 +361,12 @@ img {
   width: 300px;
   height: 300px;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 100%;
 }
 
 .edu-img-div > img {
-  width: 400px;
-  transform: translate(-25%, -45%);
+  width: 500px;
+  transform: translate(-20%, -13%);
 }
 
 .pro-contents {
