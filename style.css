@@ -381,7 +381,7 @@ img {
 
 .pro-img {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .pro-img-contents {
