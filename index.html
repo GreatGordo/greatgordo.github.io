@@ -87,9 +87,8 @@
         </div>
       </div>
 
-      <div class="pro-img-container ">
-	  <div  class="pro-img">
-	  <div class="pro-img-contents">
+      <div class="pro-img">
+        <div class="pro-img-contents">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Logo-java-830x460.jpg/800px-Logo-java-830x460.jpg"
             alt="Java"
@@ -113,7 +112,609 @@
             alt="Office"
           />
         </div>
-	  </div>
+      </div>
+    </div>
+
+    <div id="occ-card">
+      <h2 style="text-align: center;">Where I've Worked??</h2>
+      <div id = "wb-container">
+              <div id = "wb-img" >
+              <img src="wb-photo.JPG" alt="Working at Whataburger">
+            </div>
+            </div>
+      <div  id="dropdown-container">
+        <div id = "drawer-SMG" class="dropdown"  onclick = "openDrawer('SMG-content')">
+          <button class="dropbtn">Studio Movie Grill</button>
+          <div id = "SMG-content"class="dropdown-content">
+            <p>
+              Runner <br />
+              Aug 2019 - Present <br />
+              Duties:
+            </p>
+            <ul>
+              <li>Duties: Maintain cleanliness of the establishment according to
+              store standards.</li>
+              <li> Transport customer items to their proper
+              destination and solve all customer requests in a timely manner</li>
+            </ul>
+          </div>
+        </div>
+        <div id = "drawer-uptrade" class="dropdown" onclick = "openDrawer('UP-content')">
+          <button class="dropbtn">UpTrade Technologies</button>
+          <div id = "UP-content" class="dropdown-content">
+            <p>
+              Operations Assistant <br>
+              June 2018 - July 2018 <br> Duties
+            </p>
+            <ul>
+              <li>Assessed the condition of used Apple phone products.
+</li>
+              <li>Interacted with the reselling community through OfferUp, LetGo, and other reselling platforms to negotiate a price for used Apple phones.</li>
+              <li>Monitored and recorded phone transaction history through Excel.</li>
+            </ul>
+          </div>
+        </div>
+        <div id = "drawer-whataburger" class="dropdown" onclick = "openDrawer('WB-content')">
+          <button class="dropbtn">Whataburger</button>
+          <div id = "WB-content" class="dropdown-content">
+            <p>
+              Team Member <br />
+              May 2016 - Aug - 2018 <br />
+              Duties:
+            </p>
+            <ul>
+              <li>
+                Coordinate customer dialogue that adheres to order-taking policy
+                while providing friendly customer service. Received employee of
+                the month for June 2018.
+              </li>
+              <li>
+                Maintain a thorough knowledge on store menu items and the best
+                methods to apply customer modifications with POS cash register
+              </li>
+              <li>
+                Assist team members with the creation of customer orders under
+                high-pressure situations
+              </li>
+              <li>
+                Aid management in recording necessary information regarding
+                inventory and daily food temperatures
+              </li>
+            </ul>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="con-card">
+      <h2>Wanna Talk? 📞 </h2>
+      <p>
+        You can contact me at... <br>
+        <b>Email</b>: wxc180007@utdallas.edu <br>
+        <b>Phone</b>: (815)909-4037
+      </p>
+          </div>
+		  
+		  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>William Chan</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+  </head>
+  <body>
+    <nav>
+      <a href="#" onclick="changeCard('bio-card')">About Me</a>
+      <a href="#" onclick="changeCard('edu-card')">Education</a>
+      <a href="#" onclick="changeCard('pro-card')">Projects/Skills</a>
+      <a href="#" onclick="changeCard('occ-card')">Occupational History</a>
+      <a href="#" onclick="changeCard('con-card')">Contact Information</a>
+    </nav>
+
+    <header>
+      <h1 style="text-align: center;">
+        Hi! William Chan here!😄 <br />Thank you for visiting.
+      </h1>
+      <div class="img-container">
+        <img
+          src="header-photo.jpg"
+          alt="portrait"
+        />
+      </div>
+    </header>
+    <!-- End of Header Card..................................... -->
+
+    <div id="bio-card">
+      <h2 style="text-align: center;" >About Me...</h2>
+      <p style = "  padding: 12px 12px;
+  background-color: rgba(0, 0, 0, 0.1); border-radius: 5px;">
+        I am a software engineering student from the <span style = "color: #FF7F50">University of Texas at
+        Dallas</span>. My dream job is to become a full-stack developer or a front-end
+        developer. I really enjoy developing websites..even though this one is the
+        only one I have created, but I love the creative process of using HTML,
+        CSS, and other languages to make amazing looking user interfaces. I am
+        currently in the processing of looking for an internship, but until I
+        find one, I will continue to develop more tiny front-end munchlings on
+        CodePen!
+      </p>
+    </div>
+    <!-- End of About Me Card......................................-->
+
+    <div id="edu-card">
+      <h2 style="text-align: center">~ Education ~</h2>
+      <div class="edu-container">
+        <div class="edu-img-div">
+          <img
+            src="utd-photo(1).jpg"
+            alt="University of Texas at Dallas"
+          />
+        </div>
+        <p>
+          <span style="font-size: 25px;">University of Texas at Dallas</span
+          ><br /><br />
+          <b>MAJOR</b>: Software Engineering <br />
+          <b>GPA</b>: 3.55 <br />
+          <b>ANTICIPATED<br />GARDUATION</b>: Spring 2021
+        </p>
+      </div>
+    </div>
+    <!-- End of Education Card......................................-->
+
+    <div id="pro-card">
+      <h2 style="text-align: center;">Projects And Skills! 💻</h2>
+      <div class="pro-contents">
+        <div>
+          <h4>Social Media</h4>
+          <p>
+            <b>Github</b>: https://github.com/GreatGordo <br />
+            <b>CodePen</b>: https://codepen.io/GreatGordo
+          </p>
+        </div>
+        <div>
+          <h4>Technical Skills</h4>
+          <p>
+            <b>Programming Languages</b>: Java, Python, HTML, and CSS <br />
+            Googles Suites <br />
+            Microsoft Suites
+          </p>
+        </div>
+      </div>
+
+      <div class="pro-img">
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Logo-java-830x460.jpg/800px-Logo-java-830x460.jpg"
+            alt="Java"
+          />
+        </div>
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/8a/HTML5.png"
+            alt="HTML"
+          />
+        </div>
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_of_Google_Drive.svg/600px-Logo_of_Google_Drive.svg.png"
+            alt="Google Drive"
+          />
+        </div>
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Microsoft_Office_2013_logo.svg/54px-Microsoft_Office_2013_logo.svg.png"
+            alt="Office"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="occ-card">
+      <h2 style="text-align: center;">Where I've Worked??</h2>
+      <div id = "wb-container">
+              <div id = "wb-img" >
+              <img src="wb-photo.JPG" alt="Working at Whataburger">
+            </div>
+            </div>
+      <div  id="dropdown-container">
+        <div id = "drawer-SMG" class="dropdown"  onclick = "openDrawer('SMG-content')">
+          <button class="dropbtn">Studio Movie Grill</button>
+          <div id = "SMG-content"class="dropdown-content">
+            <p>
+              Runner <br />
+              Aug 2019 - Present <br />
+              Duties:
+            </p>
+            <ul>
+              <li>Duties: Maintain cleanliness of the establishment according to
+              store standards.</li>
+              <li> Transport customer items to their proper
+              destination and solve all customer requests in a timely manner</li>
+            </ul>
+          </div>
+        </div>
+        <div id = "drawer-uptrade" class="dropdown" onclick = "openDrawer('UP-content')">
+          <button class="dropbtn">UpTrade Technologies</button>
+          <div id = "UP-content" class="dropdown-content">
+            <p>
+              Operations Assistant <br>
+              June 2018 - July 2018 <br> Duties
+            </p>
+            <ul>
+              <li>Assessed the condition of used Apple phone products.
+</li>
+              <li>Interacted with the reselling community through OfferUp, LetGo, and other reselling platforms to negotiate a price for used Apple phones.</li>
+              <li>Monitored and recorded phone transaction history through Excel.</li>
+            </ul>
+          </div>
+        </div>
+        <div id = "drawer-whataburger" class="dropdown" onclick = "openDrawer('WB-content')">
+          <button class="dropbtn">Whataburger</button>
+          <div id = "WB-content" class="dropdown-content">
+            <p>
+              Team Member <br />
+              May 2016 - Aug - 2018 <br />
+              Duties:
+            </p>
+            <ul>
+              <li>
+                Coordinate customer dialogue that adheres to order-taking policy
+                while providing friendly customer service. Received employee of
+                the month for June 2018.
+              </li>
+              <li>
+                Maintain a thorough knowledge on store menu items and the best
+                methods to apply customer modifications with POS cash register
+              </li>
+              <li>
+                Assist team members with the creation of customer orders under
+                high-pressure situations
+              </li>
+              <li>
+                Aid management in recording necessary information regarding
+                inventory and daily food temperatures
+              </li>
+            </ul>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="con-card">
+      <h2>Wanna Talk? 📞 </h2>
+      <p>
+        You can contact me at... <br>
+        <b>Email</b>: wxc180007@utdallas.edu <br>
+        <b>Phone</b>: (815)909-4037
+      </p>
+          </div>
+		  
+		  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>William Chan</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+  </head>
+  <body>
+    <nav>
+      <a href="#" onclick="changeCard('bio-card')">About Me</a>
+      <a href="#" onclick="changeCard('edu-card')">Education</a>
+      <a href="#" onclick="changeCard('pro-card')">Projects/Skills</a>
+      <a href="#" onclick="changeCard('occ-card')">Occupational History</a>
+      <a href="#" onclick="changeCard('con-card')">Contact Information</a>
+    </nav>
+
+    <header>
+      <h1 style="text-align: center;">
+        Hi! William Chan here!😄 <br />Thank you for visiting.
+      </h1>
+      <div class="img-container">
+        <img
+          src="header-photo.jpg"
+          alt="portrait"
+        />
+      </div>
+    </header>
+    <!-- End of Header Card..................................... -->
+
+    <div id="bio-card">
+      <h2 style="text-align: center;" >About Me...</h2>
+      <p style = "  padding: 12px 12px;
+  background-color: rgba(0, 0, 0, 0.1); border-radius: 5px;">
+        I am a software engineering student from the <span style = "color: #FF7F50">University of Texas at
+        Dallas</span>. My dream job is to become a full-stack developer or a front-end
+        developer. I really enjoy developing websites..even though this one is the
+        only one I have created, but I love the creative process of using HTML,
+        CSS, and other languages to make amazing looking user interfaces. I am
+        currently in the processing of looking for an internship, but until I
+        find one, I will continue to develop more tiny front-end munchlings on
+        CodePen!
+      </p>
+    </div>
+    <!-- End of About Me Card......................................-->
+
+    <div id="edu-card">
+      <h2 style="text-align: center">~ Education ~</h2>
+      <div class="edu-container">
+        <div class="edu-img-div">
+          <img
+            src="utd-photo(1).jpg"
+            alt="University of Texas at Dallas"
+          />
+        </div>
+        <p>
+          <span style="font-size: 25px;">University of Texas at Dallas</span
+          ><br /><br />
+          <b>MAJOR</b>: Software Engineering <br />
+          <b>GPA</b>: 3.55 <br />
+          <b>ANTICIPATED<br />GARDUATION</b>: Spring 2021
+        </p>
+      </div>
+    </div>
+    <!-- End of Education Card......................................-->
+
+    <div id="pro-card">
+      <h2 style="text-align: center;">Projects And Skills! 💻</h2>
+      <div class="pro-contents">
+        <div>
+          <h4>Social Media</h4>
+          <p>
+            <b>Github</b>: https://github.com/GreatGordo <br />
+            <b>CodePen</b>: https://codepen.io/GreatGordo
+          </p>
+        </div>
+        <div>
+          <h4>Technical Skills</h4>
+          <p>
+            <b>Programming Languages</b>: Java, Python, HTML, and CSS <br />
+            Googles Suites <br />
+            Microsoft Suites
+          </p>
+        </div>
+      </div>
+
+      <div class="pro-img">
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Logo-java-830x460.jpg/800px-Logo-java-830x460.jpg"
+            alt="Java"
+          />
+        </div>
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/8a/HTML5.png"
+            alt="HTML"
+          />
+        </div>
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_of_Google_Drive.svg/600px-Logo_of_Google_Drive.svg.png"
+            alt="Google Drive"
+          />
+        </div>
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Microsoft_Office_2013_logo.svg/54px-Microsoft_Office_2013_logo.svg.png"
+            alt="Office"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="occ-card">
+      <h2 style="text-align: center;">Where I've Worked??</h2>
+      <div id = "wb-container">
+              <div id = "wb-img" >
+              <img src="wb-photo.JPG" alt="Working at Whataburger">
+            </div>
+            </div>
+      <div  id="dropdown-container">
+        <div id = "drawer-SMG" class="dropdown"  onclick = "openDrawer('SMG-content')">
+          <button class="dropbtn">Studio Movie Grill</button>
+          <div id = "SMG-content"class="dropdown-content">
+            <p>
+              Runner <br />
+              Aug 2019 - Present <br />
+              Duties:
+            </p>
+            <ul>
+              <li>Duties: Maintain cleanliness of the establishment according to
+              store standards.</li>
+              <li> Transport customer items to their proper
+              destination and solve all customer requests in a timely manner</li>
+            </ul>
+          </div>
+        </div>
+        <div id = "drawer-uptrade" class="dropdown" onclick = "openDrawer('UP-content')">
+          <button class="dropbtn">UpTrade Technologies</button>
+          <div id = "UP-content" class="dropdown-content">
+            <p>
+              Operations Assistant <br>
+              June 2018 - July 2018 <br> Duties
+            </p>
+            <ul>
+              <li>Assessed the condition of used Apple phone products.
+</li>
+              <li>Interacted with the reselling community through OfferUp, LetGo, and other reselling platforms to negotiate a price for used Apple phones.</li>
+              <li>Monitored and recorded phone transaction history through Excel.</li>
+            </ul>
+          </div>
+        </div>
+        <div id = "drawer-whataburger" class="dropdown" onclick = "openDrawer('WB-content')">
+          <button class="dropbtn">Whataburger</button>
+          <div id = "WB-content" class="dropdown-content">
+            <p>
+              Team Member <br />
+              May 2016 - Aug - 2018 <br />
+              Duties:
+            </p>
+            <ul>
+              <li>
+                Coordinate customer dialogue that adheres to order-taking policy
+                while providing friendly customer service. Received employee of
+                the month for June 2018.
+              </li>
+              <li>
+                Maintain a thorough knowledge on store menu items and the best
+                methods to apply customer modifications with POS cash register
+              </li>
+              <li>
+                Assist team members with the creation of customer orders under
+                high-pressure situations
+              </li>
+              <li>
+                Aid management in recording necessary information regarding
+                inventory and daily food temperatures
+              </li>
+            </ul>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="con-card">
+      <h2>Wanna Talk? 📞 </h2>
+      <p>
+        You can contact me at... <br>
+        <b>Email</b>: wxc180007@utdallas.edu <br>
+        <b>Phone</b>: (815)909-4037
+      </p>
+          </div>
+		  
+		  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>William Chan</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+  </head>
+  <body>
+    <nav>
+      <a href="#" onclick="changeCard('bio-card')">About Me</a>
+      <a href="#" onclick="changeCard('edu-card')">Education</a>
+      <a href="#" onclick="changeCard('pro-card')">Projects/Skills</a>
+      <a href="#" onclick="changeCard('occ-card')">Occupational History</a>
+      <a href="#" onclick="changeCard('con-card')">Contact Information</a>
+    </nav>
+
+    <header>
+      <h1 style="text-align: center;">
+        Hi! William Chan here!😄 <br />Thank you for visiting.
+      </h1>
+      <div class="img-container">
+        <img
+          src="header-photo.jpg"
+          alt="portrait"
+        />
+      </div>
+    </header>
+    <!-- End of Header Card..................................... -->
+
+    <div id="bio-card">
+      <h2 style="text-align: center;" >About Me...</h2>
+      <p style = "  padding: 12px 12px;
+  background-color: rgba(0, 0, 0, 0.1); border-radius: 5px;">
+        I am a software engineering student from the <span style = "color: #FF7F50">University of Texas at
+        Dallas</span>. My dream job is to become a full-stack developer or a front-end
+        developer. I really enjoy developing websites..even though this one is the
+        only one I have created, but I love the creative process of using HTML,
+        CSS, and other languages to make amazing looking user interfaces. I am
+        currently in the processing of looking for an internship, but until I
+        find one, I will continue to develop more tiny front-end munchlings on
+        CodePen!
+      </p>
+    </div>
+    <!-- End of About Me Card......................................-->
+
+    <div id="edu-card">
+      <h2 style="text-align: center">~ Education ~</h2>
+      <div class="edu-container">
+        <div class="edu-img-div">
+          <img
+            src="utd-photo(1).jpg"
+            alt="University of Texas at Dallas"
+          />
+        </div>
+        <p>
+          <span style="font-size: 25px;">University of Texas at Dallas</span
+          ><br /><br />
+          <b>MAJOR</b>: Software Engineering <br />
+          <b>GPA</b>: 3.55 <br />
+          <b>ANTICIPATED<br />GRADUATION</b>: Spring 2021
+        </p>
+      </div>
+    </div>
+    <!-- End of Education Card......................................-->
+
+    <div id="pro-card">
+      <h2 style="text-align: center;">Projects And Skills! 💻</h2>
+      <div class="pro-contents">
+        <div>
+          <h4>Social Media</h4>
+          <p>
+            <b>Github</b>: https://github.com/GreatGordo <br />
+            <b>CodePen</b>: https://codepen.io/GreatGordo
+          </p>
+        </div>
+        <div>
+          <h4>Technical Skills</h4>
+          <p>
+            <b>Programming Languages</b>: Java, Python, HTML, and CSS <br />
+            Googles Suites <br />
+            Microsoft Suites
+          </p>
+        </div>
+      </div>
+
+      <div class="pro-img">
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Logo-java-830x460.jpg/800px-Logo-java-830x460.jpg"
+            alt="Java"
+          />
+        </div>
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/8a/HTML5.png"
+            alt="HTML"
+          />
+        </div>
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_of_Google_Drive.svg/600px-Logo_of_Google_Drive.svg.png"
+            alt="Google Drive"
+          />
+        </div>
+        <div class="pro-img-contents">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Microsoft_Office_2013_logo.svg/54px-Microsoft_Office_2013_logo.svg.png"
+            alt="Office"
+          />
+        </div>
       </div>
     </div>
 
