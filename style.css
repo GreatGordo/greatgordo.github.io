@@ -156,7 +156,11 @@ img {
 
 .pro-img {
   display: flex;
-  justify-content: flex-start;
+}
+
+.pro-img-container{
+	display: flex;
+	justify-content: center;
 }
 
 .pro-img-contents {
