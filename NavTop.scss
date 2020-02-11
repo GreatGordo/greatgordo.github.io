@@ -1,0 +1,231 @@
+* {
+  box-sizing: box-border;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin middle($v, $h) {
+  display: flex;
+  justify-content: $v;
+  align-items: $h;
+}
+
+#nav-wrapper {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: FireBrick;
+  div {
+    height: 50px;
+    @include middle(flex-end, center);
+    border-bottom: 2px inset rgba(0, 0, 0, 0.3);
+
+    p {
+      margin-right: 15px;
+      height: 20px;
+      width: 20px;
+      border-radius: 100%;
+      background-color: white;
+      @include middle(center, center);
+      transition: 0.5s;
+
+      span {
+        font-weight: bold;
+      }
+
+      &:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+}
+
+nav{
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  padding-top: 50px;
+  transition: .5s;
+  background-color: FireBrick;
+  overflow: hidden;
+  border-bottom: 2px inset rgba(0,0,0,.3);
+  box-shadow: 0px 3px 2px Grey;
+  height: 0px;
+  z-index: 1;
+  a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 10px;
+    height: 20px;
+    border-top: 2px inset rgba(255,255,255,.2);
+    border-bottom: 2px inset rgba(0,0,0,.3);
+    &:hover{
+      background-color: white;
+      color: black;
+      transition: .2s;
+      font-size: 20px;
+    }
+    &:last-child{
+      border-top: 2px inset rgba(255,255,255,.2);
+    }
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1{
+  text-align: center;
+  color: black;
+  letter-spacing: 5px;
+}
+
+.card{
+  box-shadow: 0px 4px 3px Grey;
+  background-color:  #f2f2f2;
+  margin: 20px;
+
+  header{
+    text-align: center;
+    font-size: 25px;
+    color: 	white;
+    background-color: 	 FireBrick;
+
+    i{
+      font-size: 20px;
+      transform: translate(0,2px);
+    }
+  }
+
+  p{
+    margin: 10px;
+    padding-bottom: 10px;
+  }
+
+}
+
+#home{
+  height: 70px;
+}
+
+#about-me{
+  div{
+    border: 3px inset rgba(0,0,0,.2);
+    margin-bottom: 10px;
+    height:100px;
+    overflow: hidden;
+    background-color: white;
+
+    p{
+      transition: .5s;
+      transform: translate(0,0);
+    }
+  }
+  button{
+    margin: 5px;
+  }
+}
+
+#img-wrapper{
+  width: 100vw;
+  @include middle(center, center);
+  img{
+      clip-path: circle(40% at 50% 50%);
+      max-width: 100%;
+  }
+}
+
+#education{
+  header{
+    width: 100%;
+  }
+  p{
+    text-align: center;
+  }
+  flex-direction: column;
+  @include middle(flex-start, center);
+  div{
+    flex-direction: column;
+    @include middle(center, center);
+    width: 100%;
+
+    img{
+      width: 300px;
+      border: 3px inset rgba(0,0,0,.2);
+      max-width: 90%;
+    }
+    padding-bottom: 10px;
+  }
+}
+
+#skills{
+  h3{
+    margin: 10px;
+    text-align: center;
+  }
+  ul{
+    padding-bottom: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 505px) {
+  #nav-wrapper,#nav,#home{
+    display: none;
+  }
+  #headtitle{
+    grid-area: head;
+    background-color: FireBrick;
+    border-bottom: 2px inset rgba(0,0,0,.3);
+    margin-top: 0;
+    padding: 5px;
+    color: white;
+  }
+  #img-wrapper{
+    grid-area: photo;
+    width: auto;
+  }
+  #about-me{
+    grid-area: me;
+  }
+  #education{
+    grid-area: edu;
+    div img{
+      max-width: 90%;
+    }
+  }
+  #skills{
+    grid-area: skill;
+  }
+  #contact{
+    grid-area: contact;
+  }
+  body{
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    'head head head head'
+    'photo photo me me '
+    'edu edu skill skill'
+    'contact contact contact contact';
+  }
+
+}
