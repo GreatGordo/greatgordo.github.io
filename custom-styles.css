@@ -1,0 +1,106 @@
+* {
+  font-family: 'Varela Round', sans-serif;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+.img-info {
+  position: absolute;
+  left: 50%;
+  z-index: 6;
+  transform: translate(-50%, -100%);
+  background-color: #FFA7A7;
+  width: 100%;
+  height: 100%;
+  transition: .5s linear;
+  text-align: center;
+  opacity: .9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.circle {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.img-photo:hover~p, figcaption:hover~p {
+  transform: translate(-50%, 0);
+}
+.img-photo:hover~figcaption{
+  opacity: 0;
+}
+
+.career-img {
+  clip-path: circle(50% at 50% 50%);
+  z-index: 0;
+}
+
+figcaption {
+  transition: .5s;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  height: 0px;
+}
+
+#skills-buttons {
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 3px DarkGrey;
+  border: 3px outset FireBrick;
+}
+
+button {
+  background-image: linear-gradient(
+    #FFA7A7,
+    rgba(0,0,0,.1)
+    );
+  background-color: #B92020;
+  color: white;
+}
+
+
+#skills-detail {
+  height: 200px;
+}
+
+.red-theme {
+  background-color: #B92020;
+}
+
+.gray-theme {
+  background-color: #E6E6E6
+}
+
+h3 {
+  padding: 1rem;
+}
+
+h1, h2 {
+  color: #720000;
+}
+
+#nav-btn {
+  position: relative;
+  top: -1px;
+}
+
+#nav-short-screen {
+  height: 0;
+}
+
+#nav-short-screen>.link:hover {
+  background-color: #FFA7A7;
+  transition: .3s;
+}

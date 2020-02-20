@@ -5,78 +5,173 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <title>William Chan</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="custom-styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id = "top" class="overflow-x-hidden">
 
-  <div id = "home"></div>
-  <div id="nav-wrapper">
-    <div>
-      <p onclick="openNav()" ><span id="button">&equiv;</span></p>
-    </div>
+  <!-- NAVIGATION  -->
+  <div class="fixed md:hidden red-theme z-10 w-screen">
+    <p id="nav-btn" onclick="navMenu()" class="inline px-3 text-white text-3xl cursor-pointer">&equiv;</p>
+    <nav id="nav-short-screen" class="overflow-hidden md:block shadow-md flex flex-col w-screen md:flex-row bg-white z-10">
+      <a href="#top" class="link p-1">Top</a>
+      <a href="#me" class="link p-1">About Me</a>
+      <a href="#edu" class="link p-1">Education</a>
+      <a href="#pro-skills" class="link p-1">Project and Skills</a>
+      <a href="#career" class="link p-1">Occupational History</a>
+      <a href="#footer" class = "link p-1">Contact Information</a>
+    </nav>
   </div>
 
-  <nav id="nav">
-    <a href="#home">Home</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Project/Skills</a>
-    <a href="#contact">Contact Information</a>
+  <nav class="hidden md:block shadow-md p-2 flex flex-col fixed w-screen md:flex-row bg-white z-10">
+    <a href="#top" class="link">Top</a>
+    <a href="#me" class="link">About Me</a>
+    <a href="#edu" class="link">Education</a>
+    <a href="#pro-skills" class="link">Project and Skills</a>
+    <a href="#career" class="link">Occupational History</a>
+    <a href="#footer" class = "link">Contact Information</a>
   </nav>
 
-  <h1 id = "headtitle">William Chan</h1>
+  <!-- HEADER -->
 
-  <div id = "img-wrapper">
-    <img src="TurnedPortrait(2).jpg" alt="William Chan" style = "width: 300px;">
-  </div>
-
-  <div class = "card" id = "about-me">
-    <header><i class="material-icons">account_circle</i>About Me?</header>
-    <div>
-      <p id = "para">I am a software engineering student from the <strong>University of Texas at Dallas</strong>. My dream job is to become a full-stack developer or a front-end developer. I really enjoy developing websites..even though this one is the only one I have created, but I love the creative process of using HTML, CSS, and other languages to make amazing looking user interfaces. I am currently in the processing of looking for an internship, but until I find one, I will continue to develop more tiny front-end munchlings on <a href="https://codepen.io/GreatGordo">CodePen!</a></p>
+  <header class="gray-theme pt-40 flex flex-col md:flex-row md:pt-0">
+    <img src="TurnedPortrait(3).jpg" alt="William Chan" class="max-w-xs self-center md:max-w-sm md:m-0">
+    <div class="flex-grow flex flex-col justify-center p-6">
+      <h1 class="text-5xl self-center text-center md:self-start lg:text-6xl">William Chan</h1>
+      <h2 class="text-2xl self-center text-center md:self-start">Software Engineering</h2>
     </div>
-    <button onclick = "goDown()">Read More</button>
-    <button onclick = "goUp()">Back To Top</button>
-  </div>
+  </header>
 
-  <div class = "card" id = "education">
-    <header><i class="material-icons">library_books</i>Education</header>
-    <p><u>University:</u><br>University of Texas At Dallas <br> <u>Major</u> <br> <strong>Software Engineering</strong><br>
-      <u>GPA: </u> <br> 3.55 <br>
-    <u>Anticipated Graduation: </u> <br> Spring 2021 </p>
-    <div>
-      <img src="UTD-Photo.jpg" alt="Me at UTD">
-      <figcaption>...First Visit at UTD</figcaption>
+  <!-- ABOUT ME AND EDUCATION -->
+
+  <div id = "me" class="flex flex-col md:flex-row py-12">
+    <div class="w-12/12 md:w-8/12 lg:w-7/12">
+      <h3 class = "text-3xl font-semibold" style="background-color: white;">ABOUT ME</h3>
+      <p class="p-6">
+        I am a software engineering student from the <strong>University of Texas at Dallas</strong>.
+        My dream job is to become a full-stack developer or a front-end developer. I really
+        enjoy developing websites...even though this one is the only one I have created, but
+        I love the creative process of using HTML, CSS, and other languages to make amazing
+        looking user interfaces.
+      </p>
+    </div>
+
+    <div id = "edu" class="shadow-md flex-grow gray-theme">
+      <h3 class="red-theme text-white">EDUCATION</h3>
+      <div class="flex flex-col md:flex-row">
+        <img src="C:\Users\wcPla\OneDrive\Documents\Personal\Atom\UTD-Photo.jpg" alt="UTD" class="my-6 ml-6 max-w-xs self-center md:w-48 lg:w-64">
+        <p class="m-6">
+          <u>University</u>:<br>
+          Univesity of Texas at Dallas <br>
+          <u>Major</u>:<br>
+          Software Engineering <br>
+          <u>GPA</u>:<br>
+          3.55 <br>
+          <u>Anticipated Graduation</u>: <br>
+          Spring 2021
+        </p>
+      </div>
     </div>
   </div>
 
-  <div class = "card" id = "skills">
-    <header><i class="material-icons">computer</i>My Projects and Skills</header>
-    <h3>Projects</h3>
-    <ul>
-      <li><a href="https://codepen.io/GreatGordo/pen/xxGbJee">Scrolling Text Box</a></li>
-    </ul>
-    <h3>Skills</h3>
-    <ul>
-      <li>Programming Skills: HTML, CSS, Java, and Python</li>
-      <li>Google Suites</li>
-      <li>Microsoft Office</li>
-      <li>Windows OS</li>
-    </ul>
+  <!-- PROJECT AND SKILLS -->
+
+  <h3 id = "pro-skills" class="gray-theme w-screen mb-12">PROJECT AND SKILLS</h3>
+  <div class="flex flex-col md:flex-row  md:m-6">
+
+    <div id="skills-buttons" class="mb-12 md:mb-0 self-center flex flex-col justify-center md:mr-3 red-theme">
+      <button onclick = "showProjects()" class="w-10/12 mx-auto my-1">Click for Projects</button>
+      <button onclick = "showSkills()" class="w-10/12 mx-auto my-1">Click for Skills</button>
+    </div>
+
+    <div id="skills-detail" style="background-color: #E6E6E6" class="md:ml-3 md:flex-grow p-4 flex flex-row content-center justify-center">
+      <div class="h-full w-full bg-white overflow-y-scroll ">
+        <div id = "projects" >
+          <p class = "p-2 pb-0">
+            <u>What have I worked on?</u> <br>
+            Personal Website <br>
+          </p>
+          <details class = "pl-2 text-md">
+            <summary>Languages Used: HTML, CSS, JavasScript with Tailwind Framework</summary>
+            <p>
+              Personal Website created using HTML, CSS, and Javascript.
+              Layout was made responsive through the Tailwind CSS utility framework. <br>
+              Link: https://greatgordo.github.io./
+            </p>
+          </details>
+          <p class = "p-2 pb-0">Scrolling Text Box with Button Interface</p>
+          <details class = "pl-2 text-md">
+            <summary>Lanuages Used: HTML, SCSS, and JavaScript</summary>
+            <p>
+              Scrolling text box that will go up and down using interactable buttons. <br>
+              Link: https://codepen.io/GreatGordo/pen/xxGbJee
+            </p>
+          </details>
+        </div>
+
+        <div id = "skills" class = "hidden">
+          <p class = "p-2">
+            <u>Programming Languages</u>:
+            HTML, CSS, Java, Python <br>
+            Windows <br>
+            Googles Suites <br>
+            Microsoft Office <br>
+          </p>
+        </div>
+      </div>
+    </div>
 
   </div>
 
-  <div class = "card" id = "contact">
-    <header><i class="material-icons">phone</i>Contact Information</header>
-    <p><u>Email</u><br>il.wchan97@gmail.com <br> wxc180007@utdallas.edu <br>
-    <u>Phone</u> <br> (815) 909-4037 </p>
-  </div>
-  <script src="script.js"></script>
+  <!-- OCCUPATIONAL HISTORY -->
 
+  <h3 id = "career" class="gray-theme mt-12">OCCUPATIONAL HISTORY</h3>
+  <h4 class = "w-screen text-center">..hover images for more information...</h4>
+  <div class="overflow-hidden mask flex flex-col md:flex-row justify-around py-6">
+
+    <div class="overflow-hidden mask my-6 flex flex-col md:my-12">
+      <div class="circle flex flex-col bg-gray-500 self-center">
+        <img src="IMG_7726.jpg" alt="" class="img-photo career-img w-64 self-center z-0">
+        <figcaption class = "text-2xl">WHATABURGER</figcaption>
+        <p class="img-info">WHATABURGER <br> Team Member<br>2016 - 2018</p>
+      </div>
+    </div>
+
+    <div class="overflow-hidden mask flex my-6 flex-col md:my-12">
+      <div class="circle flex flex-col bg-gray-500 self-center">
+        <img src="movie-theater.jfif" alt="" class="img-photo career-img w-64 self-center z-0">
+        <figcaption class = "text-2xl">STUDIO MOVIE <br> GRILL</figcaption>
+        <p class="img-info">STUDIO MOVIE GRILL <br> Food Runner<br>2019 - Present</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer id = "footer" class="red-theme">
+    <div class="p-4 text-white">
+      <p>
+        <u>Email:</u><br>
+        wxc180007@utdallas.edu <br>
+        il.wchan97@gmail.com <br>
+        <u>Phone:</u> <br>
+        (815) 909-4037
+      </p>
+    </div>
+    <div class="p-4 text-white">
+      <p>
+        <u>LinkedIn:</u><br>
+        https://www.linkedin.com/in/william-chan-bb4777158/ <br>
+        <u>Codepen:</u><br>
+        https://codepen.io/GreatGordo
+      </p>
+    </div>
+  </footer>
+
+  <script src="tailwind-one.js"></script>
 </body>
 
 </html>
